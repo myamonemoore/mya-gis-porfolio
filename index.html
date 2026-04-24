@@ -13,123 +13,164 @@
         <div class="nav-container">
             <span class="logo">Mya Moore</span>
             <ul class="nav-links">
-                <li><a href="#" class="tab-link active" onclick="openTab(event, 'about')">About</a></li>
-                <li><a href="#" class="tab-link" onclick="openTab(event, 'projects')">Projects</a></li>
-                <li><a href="#" class="tab-link" onclick="openTab(event, 'resume')">Resume</a></li>
-                <li><a href="#" class="tab-link" onclick="openTab(event, 'contact')">Contact</a></li>
+                <li><button class="tab-link" onclick="openTab(event, 'about')">About</button></li>
+                <li><button class="tab-link" onclick="openTab(event, 'projects')">Projects</button></li>
+                <li><button class="tab-link" onclick="openTab(event, 'resume')">Resume</button></li>
+                <li><button class="tab-link" onclick="openTab(event, 'contact')">Contact</button></li>
             </ul>
         </div>
     </nav>
 
+    <header class="hero-banner">
+        <img src="images/header.jpg" alt="GIS Banner" class="banner-img">
+    </header>
+
     <main class="container">
-        <section id="about" class="tab-content active">
+        <section id="about" class="tab-content">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="images/headshot.jpg" alt="Mya Moore">
+                    <img src="images/linkedin_photo.jpeg" alt="Mya Moore Headshot">
                 </div>
                 <div class="about-text">
-                    <h1>Hi, I'm Myawna Moore! [cite: 109]</h1>
-                    <p class="subtitle">Second-year M.A. in Geography at the University of Denver [cite: 111]</p>
-                    <p>My academic interests focus on the connections between <strong>people, place, and health</strong>, specifically examining how environmental conditions and spatial patterns shape population well-being[cite: 112].</p>
-                    <p>I specialize in human-environment interactions, sustainability, and Geographic Information Science (GIS) to analyze natural hazards, epidemiology, and public health issues[cite: 113, 114].</p>
-                    <p><strong>Hobbies:</strong> Hiking and walking my cat, Apollo[cite: 115].</p>
+                    <h1>Hi, I'm Myawna Moore!</h1>
+                    <p class="subtitle">M.A. Student in Geography | University of Denver</p>
+                    <p>My academic interests focus on the connections between <strong>people, place, and health</strong>. I specialize in human-environment interactions and GIS to analyze natural hazards and public health issues.</p>
+                    <div class="hobbies">
+                        <img src="images/IMG_9761.jpeg" alt="Apollo the Cat" class="hobby-img">
+                        <p><em>Hobbies: Hiking and walking my cat, Apollo.</em></p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="tab-content">
-            <h2>Featured GIS Projects</h2>
-            
+            <h2>GIS Projects</h2>
             <div class="project-card">
-                <h3>Gentrification in Seattle, WA [cite: 120]</h3>
+                <h3>Gentrification in Seattle, WA</h3>
                 <div class="project-grid">
                     <div class="project-info">
-                        <p>This project analyzes how historical redlining aligns with demographic distributions (race, income, education) and assesses if minority demographics are at higher risk for hazard gentrification[cite: 121, 122].</p>
-                        <ul>
-                            <li>Analyzed ACS 5-year estimates (2023-2024)[cite: 123].</li>
-                            <li>Data Sources: Mapping Inequality, NRI, and Census Bureau[cite: 125, 127].</li>
-                        </ul>
+                        <p>Analyzing historical redlining spatial alignment with demographics and natural hazard zones using 2023-2024 ACS data.</p>
                     </div>
                     <div class="project-img">
-                        <img src="images/seattle_redlining_map.jpg" alt="Seattle Redlining Analysis">
+                        <img src="images/SEA_NI_RED_map.jpg" alt="Gentrification Analysis">
                     </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <h3>LiDAR Processing: Landslides in Mercer Island, WA [cite: 158]</h3>
+                <h3>LiDAR Landslide Analysis</h3>
                 <div class="project-grid">
                     <div class="project-info">
-                        <p>Using LiDAR modules to visualize susceptibility to landslides along the I-90 corridor and Mercer Island coastline[cite: 162]. I reclassified DEM data to identify high-risk areas above specific threshold values[cite: 164].</p>
-                        <ul>
-                            <li>Utilized Hillshade and Slope models to identify surface depressions and cracks[cite: 166, 167].</li>
-                            <li>Data Source: USGS 3Dep King County 2021[cite: 170].</li>
-                        </ul>
+                        <p>Visualizing landslide susceptibility on Mercer Island using LiDAR surface depressions and slope models.</p>
                     </div>
                     <div class="project-img">
-                        <img src="images/lidar_mercer_island.jpg" alt="LiDAR Landslide Risk Map">
+                        <img src="images/Lidar_Project_Map_1.png" alt="LiDAR Project">
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="resume" class="tab-content">
-            <div class="resume-header">
-                <h2>Resume</h2>
-                <a href="images/Mya_Moore_Resume.pdf" class="btn" download>Download PDF</a>
-            </div>
+    <div class="resume-container">
+        <div class="resume-header-flex">
+            <h2>Professional Resume</h2>
+            <a href="images/Mya_Moore_Resume.pdf" class="btn" download>Download Full PDF</a>
+        </div>
 
-            <div class="resume-grid">
-                <div class="resume-left">
-                    <h3>Skills [cite: 172]</h3>
+        <div class="resume-grid">
+            <div class="resume-left">
+                <section class="resume-block">
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <strong>M.A. Geography</strong>
+                        <p>University of Denver | Expected June 2026</p>
+                    </div>
+                    <div class="edu-item">
+                        <strong>B.A. Geography</strong>
+                        <p>University of Central Oklahoma | May 2023</p>
+                    </div>
+                </section>
+
+                <section class="resume-block">
+                    <h3>Technical Proficiencies</h3>
                     <ul class="skills-list">
                         <li>ArcGIS Pro, Online & Enterprise</li>
                         <li>QGIS & LiDAR Processing</li>
-                        <li>PostgreSQL, SQL, & R</li>
+                        <li>PostgreSQL, SQL & R</li>
                         <li>Georeferencing & Digitizing</li>
                         <li>IBM SPSS Statistical Analysis</li>
+                        <li>Tract Builder Land Description</li>
                     </ul>
+                </section>
 
-                    <h3>Certifications [cite: 172]</h3>
-                    <ul class="skills-list">
-                        <li>ESRI: Managing Lidar Data (LAS & Mosaic)</li>
-                        <li>CITI Responsible Conduct of Research</li>
-                        <li>Artificial Intelligence Training</li>
-                    </ul>
-                </div>
-
-                <div class="resume-right">
-                    <h3>Experience</h3>
-                    <div class="job">
-                        <h4>AI Trainer (Contract) | Handshake AI [cite: 174]</h4>
-                        <p class="date">Dec 2025 – Present</p>
+                <section class="resume-block">
+                    <h3>Certifications</h3>
+                    <div class="cert-gallery">
+                        <img src="images/Cert1.png" alt="ESRI Lidar Cert">
+                        <img src="images/Cert2.png" alt="CITI Research Cert">
+                        <img src="images/Cert3.png" alt="AI Training Cert">
                     </div>
-                    <div class="job">
-                        <h4>Graduate Teaching Assistant | University of Denver [cite: 174]</h4>
-                        <p class="date">Sept 2024 – Present</p>
-                    </div>
-                    <div class="job">
-                        <h4>GIS Mapping Specialist | Reagan Smith Inc. [cite: 177]</h4>
-                        <p class="date">May 2023 – Aug 2024</p>
-                        <p>Designed 30 original plat books for the Ponca Tribe of Oklahoma[cite: 179]. Georeferenced 500+ historical land records[cite: 178].</p>
-                    </div>
-
-                    <h3>Education [cite: 172, 173]</h3>
-                    <p><strong>M.A. Geography</strong> | University of Denver (Expected June 2026)</p>
-                    <p><strong>B.A. Geography</strong> | University of Central Oklahoma (May 2023)</p>
-                </div>
+                </section>
             </div>
-        </section>
+
+            <div class="resume-right">
+                <section class="resume-block">
+                    <h3>Professional Experience</h3>
+                    
+                    <div class="job">
+                        <div class="job-title-flex">
+                            <h4>AI Trainer (Contract)</h4>
+                            <span class="date">Dec 2025 – Present</span>
+                        </div>
+                        <p class="company">Handshake AI</p>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title-flex">
+                            <h4>Graduate Teaching Assistant</h4>
+                            <span class="date">Sept 2024 – Present</span>
+                        </div>
+                        <p class="company">University of Denver</p>
+                        <ul>
+                            <li>Created ArcGIS Online dashboards using Excel-to-Table geoprocessing.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title-flex">
+                            <h4>GIS Mapping Specialist</h4>
+                            <span class="date">May 2023 – Aug 2024</span>
+                        </div>
+                        <p class="company">Reagan Smith Inc. - Oklahoma City, OK</p>
+                        <ul>
+                            <li>Designed 30 original plat books for the Ponca Tribe of Oklahoma.</li>
+                            <li>Georeferenced 500+ historical land records and streamlined geodatabase quality control.</li>
+                            <li>Translated complex land descriptions using Tract Builder.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="resume-block">
+                    <h3>Leadership & Organizations</h3>
+                    <ul class="exp-list">
+                        <li><strong>Treasurer:</strong> GIS Sustainability Env. Geo Organization (2025)</li>
+                        <li><strong>Undergraduate Mentor:</strong> Graduate Mentor Fellows (2024)</li>
+                        <li><strong>Scholarship Recipient:</strong> Leaders of Tomorrow Council (2019-2023)</li>
+                    </ul>
+                </section>
+                
+                <img src="images/IMG_9761.jpg" alt="GIS Field Work" class="resume-decor-img">
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="contact" class="tab-content">
-            <h2>Let's Connect</h2>
-            <div class="contact-container">
-                <p>Email: <a href="mailto:myammoore14@gmail.com">myammoore14@gmail.com</a> [cite: 172]</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/myawna-moore" target="_blank" class="linkedin-btn">
-                        <img src="images/linkedin-logo.png" alt="LinkedIn" style="width: 20px; vertical-align: middle;"> Visit my LinkedIn [cite: 184]
-                    </a>
-                </div>
+            <div class="contact-card">
+                <h2>Let's Connect</h2>
+                <p>Email: <a href="mailto:myammoore14@gmail.com">myammoore14@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/myawna-moore">Visit Profile</a></p>
+                <img src="images/IMG_7619.jpg" alt="Contact Visual" class="contact-img">
             </div>
         </section>
     </main>
