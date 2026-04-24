@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mya Moore | GIS Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f4ef;
+      color: #243746;
+      line-height: 1.6;
+    }
+    header {
+      background: white;
+      text-align: center;
+      padding: 40px 20px 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .header-image {
+      max-width: 260px;
+      width: 100%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #0f4c75;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding: 20px;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .tab {
+      border: none;
+      background: #eaf3f8;
+      color: #0f4c75;
+      padding: 12px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .tab.active { background: #0f4c75; color: white; }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+    h2 { margin-bottom: 16px; color: #0f4c75; }
+    h3 { margin: 24px 0 10px; }
+    .headshot {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 18px;
+      display: block;
+      margin: 20px auto;
+    }
+    .hobby-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .hobby-gallery img {
+      width: 220px;
+      border-radius: 14px;
+    }
+    .project-image {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 14px;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: 700;
+      color: #0f4c75;
+      text-decoration: none;
+    }
+    .download-btn:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/header.jpg" alt="Portfolio Header" class="header-image">
+  <h1>Mya Moore</h1>
+  <p class="subtitle">
+    Geography Graduate Student | GIS Specialist | Climate Risk, Environmental Justice, Hazard Mitigation & Spatial Analysis
+  </p>
+</header>
+
+<nav>
+  <button class="tab active" data-tab="about">About</button>
+  <button class="tab" data-tab="projects">Projects</button>
+  <button class="tab" data-tab="resume">Resume</button>
+  <button class="tab" data-tab="contact">Contact</button>
+</nav>
+
+<main>
+
+<section id="about" class="tab-content active">
+  <div class="card">
+    <h2>About Me</h2>
+    <img src="images/linkedin_photo.jpeg" alt="Headshot" class="headshot">
+    <p>
+      I am a Master's student in Geography at the University of Denver specializing in GIS, hazard vulnerability, climate displacement, and environmental justice. My graduate thesis is a two-year research project focused on climate displacement vulnerability across the United States using GIS, OLS regression, and spatial decision support tools.
+    </p>
+    <p>
+      I am pursuing GIS Analyst, Environmental Justice GIS, Hazard Geography, Emergency Response, Adaptation, Mitigation, and Climate Risk roles.
+    </p>
+
+    <h3>Outside of GIS</h3>
+    <p>I enjoy hiking and spending time outdoors with my cat Apollo, who I even take on walks.</p>
+    <div class="hobby-gallery">
+      <img src="images/IMG_9761.png" alt="Hiking">
+      <img src="images/IMG_1091.png" alt="Apollo">
+      <img src="images/IMG_9177.png" alt="Outdoor Life">
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="tab-content">
+  <div class="card">
+    <h2>Featured Thesis Project: Hazard Gentrification & Environmental Justice</h2>
+    <img src="images/redlinned.jpg" alt="Seattle Redlining" class="project-image">
+    <p>
+      My two-year graduate thesis examines how historical redlining aligns with race, income, education, and natural hazard exposure across Seattle. The project investigates whether vulnerable communities face increased risk of hazard gentrification and climate-driven displacement.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
+    <img src="images/Lidar_Project_Map_1.png" alt="LiDAR Map" class="project-image">
+    <p>
+      LiDAR-derived DEMs, slope analysis, and hillshade modeling were used to identify landslide-prone zones near Mercer Island and the I-90 corridor for hazard mitigation planning.
+    </p>
+  </div>
+</section>
+
+<section id="resume" class="tab-content">
+  <div class="card">
+    <h2>Resume</h2>
+
+    <h3>Education</h3>
+    <p><strong>University of Denver</strong><br>Master of Arts in Geography — Expected June 2026</p>
+    <p><strong>University of Central Oklahoma</strong><br>B.A. Geography, Minor in Marketing</p>
+
+    <h3>Professional Experience</h3>
+    <p><strong>Graduate Teaching Assistant</strong> — University of Denver</p>
+    <p><strong>GIS Mapping Specialist</strong> — Reagan Smith Inc.</p>
+    <p><strong>Freelance GIS Analyst</strong></p>
+    <p><strong>AI Trainer Fellowship</strong> — Handshake</p>
+
+    <h3>Technical Skills</h3>
+    <p>ArcGIS Pro, ArcGIS Online, ArcMap, QGIS, SQL, PostgreSQL, LiDAR Processing, Spatial Analysis, OLS Regression, Hazard Mapping, Dashboard Development, Cartography, Environmental Justice Analysis</p>
+
+    <p>
+      <a href="images/Resume_2026_Mya_Moore.pdf" target="_blank" class="download-btn">
+        Download Full Resume PDF
+      </a>
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="tab-content">
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: your-email@email.com</p>
+    <p>LinkedIn: add your LinkedIn URL</p>
+    <p>Location: Denver, Colorado</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const sections = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
