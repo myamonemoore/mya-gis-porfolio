@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mya Moore | GIS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">Mya Moore</span>
+            <ul class="nav-links">
+                <li><a href="#" class="tab-link active" onclick="openTab(event, 'about')">About</a></li>
+                <li><a href="#" class="tab-link" onclick="openTab(event, 'projects')">Projects</a></li>
+                <li><a href="#" class="tab-link" onclick="openTab(event, 'resume')">Resume</a></li>
+                <li><a href="#" class="tab-link" onclick="openTab(event, 'contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="tab-content active">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/headshot.jpg" alt="Mya Moore">
+                </div>
+                <div class="about-text">
+                    <h1>Hi, I'm Myawna Moore! [cite: 109]</h1>
+                    <p class="subtitle">Second-year M.A. in Geography at the University of Denver [cite: 111]</p>
+                    <p>My academic interests focus on the connections between <strong>people, place, and health</strong>, specifically examining how environmental conditions and spatial patterns shape population well-being[cite: 112].</p>
+                    <p>I specialize in human-environment interactions, sustainability, and Geographic Information Science (GIS) to analyze natural hazards, epidemiology, and public health issues[cite: 113, 114].</p>
+                    <p><strong>Hobbies:</strong> Hiking and walking my cat, Apollo[cite: 115].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-content">
+            <h2>Featured GIS Projects</h2>
+            
+            <div class="project-card">
+                <h3>Gentrification in Seattle, WA [cite: 120]</h3>
+                <div class="project-grid">
+                    <div class="project-info">
+                        <p>This project analyzes how historical redlining aligns with demographic distributions (race, income, education) and assesses if minority demographics are at higher risk for hazard gentrification[cite: 121, 122].</p>
+                        <ul>
+                            <li>Analyzed ACS 5-year estimates (2023-2024)[cite: 123].</li>
+                            <li>Data Sources: Mapping Inequality, NRI, and Census Bureau[cite: 125, 127].</li>
+                        </ul>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/seattle_redlining_map.jpg" alt="Seattle Redlining Analysis">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>LiDAR Processing: Landslides in Mercer Island, WA [cite: 158]</h3>
+                <div class="project-grid">
+                    <div class="project-info">
+                        <p>Using LiDAR modules to visualize susceptibility to landslides along the I-90 corridor and Mercer Island coastline[cite: 162]. I reclassified DEM data to identify high-risk areas above specific threshold values[cite: 164].</p>
+                        <ul>
+                            <li>Utilized Hillshade and Slope models to identify surface depressions and cracks[cite: 166, 167].</li>
+                            <li>Data Source: USGS 3Dep King County 2021[cite: 170].</li>
+                        </ul>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/lidar_mercer_island.jpg" alt="LiDAR Landslide Risk Map">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="tab-content">
+            <div class="resume-header">
+                <h2>Resume</h2>
+                <a href="images/Mya_Moore_Resume.pdf" class="btn" download>Download PDF</a>
+            </div>
+
+            <div class="resume-grid">
+                <div class="resume-left">
+                    <h3>Skills [cite: 172]</h3>
+                    <ul class="skills-list">
+                        <li>ArcGIS Pro, Online & Enterprise</li>
+                        <li>QGIS & LiDAR Processing</li>
+                        <li>PostgreSQL, SQL, & R</li>
+                        <li>Georeferencing & Digitizing</li>
+                        <li>IBM SPSS Statistical Analysis</li>
+                    </ul>
+
+                    <h3>Certifications [cite: 172]</h3>
+                    <ul class="skills-list">
+                        <li>ESRI: Managing Lidar Data (LAS & Mosaic)</li>
+                        <li>CITI Responsible Conduct of Research</li>
+                        <li>Artificial Intelligence Training</li>
+                    </ul>
+                </div>
+
+                <div class="resume-right">
+                    <h3>Experience</h3>
+                    <div class="job">
+                        <h4>AI Trainer (Contract) | Handshake AI [cite: 174]</h4>
+                        <p class="date">Dec 2025 – Present</p>
+                    </div>
+                    <div class="job">
+                        <h4>Graduate Teaching Assistant | University of Denver [cite: 174]</h4>
+                        <p class="date">Sept 2024 – Present</p>
+                    </div>
+                    <div class="job">
+                        <h4>GIS Mapping Specialist | Reagan Smith Inc. [cite: 177]</h4>
+                        <p class="date">May 2023 – Aug 2024</p>
+                        <p>Designed 30 original plat books for the Ponca Tribe of Oklahoma[cite: 179]. Georeferenced 500+ historical land records[cite: 178].</p>
+                    </div>
+
+                    <h3>Education [cite: 172, 173]</h3>
+                    <p><strong>M.A. Geography</strong> | University of Denver (Expected June 2026)</p>
+                    <p><strong>B.A. Geography</strong> | University of Central Oklahoma (May 2023)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2>Let's Connect</h2>
+            <div class="contact-container">
+                <p>Email: <a href="mailto:myammoore14@gmail.com">myammoore14@gmail.com</a> [cite: 172]</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/myawna-moore" target="_blank" class="linkedin-btn">
+                        <img src="images/linkedin-logo.png" alt="LinkedIn" style="width: 20px; vertical-align: middle;"> Visit my LinkedIn [cite: 184]
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
