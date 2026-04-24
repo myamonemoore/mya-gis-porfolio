@@ -1,30 +1,32 @@
 function openTab(evt, tabName) {
-    // Declare all variables
-    var i, tabContent, tabLinks;
+    // 1. Hide all tab content
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+        content.style.display = 'none';
+    });
 
-    // Get all elements with class="tab-content" and hide them
-    tabContent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-        tabContent[i].classList.remove("active");
+    // 2. Deactivate all buttons
+    const links = document.querySelectorAll('.tab-link');
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // 3. Show current tab and activate button
+    const selectedTab = document.getElementById(tabName);
+    if (selectedTab) {
+        selectedTab.style.display = 'block';
     }
-
-    // Get all elements with class="tab-link" and remove the class "active"
-    tabLinks = document.getElementsByClassName("tab-link");
-    for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabName).style.display = "block";
-    document.getElementById(tabName).classList.add("active");
-    evt.currentTarget.classList.add("active");
-
-    // Prevent page jump
-    evt.preventDefault();
+    evt.currentTarget.classList.add('active');
 }
 
-// Ensure the first tab is visible on load
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("about").style.display = "block";
+// 4. Initial load setup
+window.addEventListener('DOMContentLoaded', () => {
+    // Manually trigger the "About" tab
+    const aboutTab = document.getElementById('about');
+    const aboutBtn = document.querySelector('.tab-link'); // Gets first button
+    
+    if (aboutTab && aboutBtn) {
+        aboutTab.style.display = 'block';
+        aboutBtn.classList.add('active');
+    }
 });
