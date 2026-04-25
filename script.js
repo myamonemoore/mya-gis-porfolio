@@ -1,32 +1,37 @@
+// Tab Switching
 function openTab(evt, tabName) {
-    // 1. Hide all tab content
     const contents = document.querySelectorAll('.tab-content');
+    const links = document.querySelectorAll('.tab-link');
+
     contents.forEach(content => {
+        content.classList.remove('active');
         content.style.display = 'none';
     });
 
-    // 2. Deactivate all buttons
-    const links = document.querySelectorAll('.tab-link');
     links.forEach(link => {
         link.classList.remove('active');
     });
 
-    // 3. Show current tab and activate button
-    const selectedTab = document.getElementById(tabName);
-    if (selectedTab) {
-        selectedTab.style.display = 'block';
+    const activeTab = document.getElementById(tabName);
+    if (activeTab) {
+        activeTab.style.display = 'block';
+        setTimeout(() => activeTab.classList.add('active'), 10);
     }
     evt.currentTarget.classList.add('active');
 }
 
-// 4. Initial load setup
-window.addEventListener('DOMContentLoaded', () => {
-    // Manually trigger the "About" tab
-    const aboutTab = document.getElementById('about');
-    const aboutBtn = document.querySelector('.tab-link'); // Gets first button
-    
-    if (aboutTab && aboutBtn) {
-        aboutTab.style.display = 'block';
-        aboutBtn.classList.add('active');
+// Modal Functions
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Close modal if user clicks outside of the content
+window.onclick = function(event) {
+    if (event.target.className === 'modal') {
+        event.target.style.display = "none";
     }
-});
+}
