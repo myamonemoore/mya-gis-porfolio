@@ -1,75 +1,50 @@
-/* Modal (Popup) Styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
+:root {
+    --primary: #1a2a3a;
+    --accent: #007bff;
+    --text: #333;
+    --bg: #f4f7f6;
+    --white: #ffffff;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 900px;
-    position: relative;
-}
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; }
 
-.close {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
+.navbar { background: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 1000; color: white; }
+.nav-container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+.nav-links { list-style: none; display: flex; gap: 10px; margin: 0; }
 
-.modal-img, .modal-gallery img {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 5px;
-}
+.tab-link { background: transparent; border: none; color: white; padding: 8px 15px; cursor: pointer; border-radius: 4px; font-size: 1rem; }
+.tab-link.active { background: var(--accent); }
 
-.modal-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-}
+.container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+.card { background: var(--white); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px; }
 
-/* Clickable Header Style */
-.popup-trigger {
-    color: #3498db;
-    cursor: pointer;
-    text-decoration: underline;
-}
+/* Tabs Logic */
+.tab-content { display: none; }
+.tab-content.active { display: block; animation: fadeIn 0.3s ease; }
 
-.popup-trigger:hover {
-    color: #2980b9;
-}
+/* Resume Layout */
+.resume-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 15px; margin-bottom: 20px; }
+.resume-body { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+.job-item { margin-bottom: 20px; }
+.date { font-size: 0.85rem; color: #666; }
+.btn-download { background: var(--accent); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
 
-/* Hobby Styles */
-.hobby-img { width: 200px; border-radius: 10px; margin-bottom: 20px; }
-.hobby-gallery { display: flex; gap: 10px; flex-wrap: wrap; }
-.hobby-gallery img { width: 150px; border-radius: 8px; }
+/* About & Images */
+.about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; }
+.about-image img { width: 100%; border-radius: 8px; }
+.hobby-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px; }
+.hobby-gallery img { width: 100%; height: 120px; object-fit: cover; border-radius: 5px; }
 
-/* Contact Link Style */
-.linkedin-container {
-    margin-top: 20px;
-    font-size: 1.2rem;
-}
+/* Modals */
+.modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+.modal-content { background: white; margin: 5% auto; padding: 20px; width: 80%; max-width: 800px; border-radius: 10px; position: relative; }
+.close { position: absolute; right: 20px; top: 10px; font-size: 2rem; cursor: pointer; }
+.modal-img { width: 100%; }
+.cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.cert-grid img { width: 100%; border: 1px solid #ddd; }
 
-.linkedin-link {
-    text-decoration: none;
-    color: #0077b5;
-    font-weight: bold;
-}
+.popup-trigger { color: var(--accent); cursor: pointer; }
+.preview-img { width: 150px; border-radius: 5px; }
 
-.linkedin-link i {
-    font-size: 2rem;
-    margin-right: 10px;
-}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@media (max-width: 768px) { .about-grid, .resume-body { grid-template-columns: 1fr; } }
