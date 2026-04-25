@@ -4,7 +4,14 @@
     --bg: #f4f7f6;
     --white: #ffffff;
 }
-
+.logo {
+    color: #ffffff !important;   /* Forces the color to White */
+    font-size: 2.5rem;           /* Makes the name much larger */
+    font-weight: 800;           /* Makes the font extra bold */
+    letter-spacing: 2px;        /* Gives it a professional, airy look */
+    text-transform: uppercase;  /* Makes it look like a high-end brand/portfolio */
+    font-family: 'Inter', sans-serif;
+}
 body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; }
 .navbar { background: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
 .nav-container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; padding: 0 20px; }
