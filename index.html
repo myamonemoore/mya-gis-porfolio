@@ -24,23 +24,21 @@
 
     <main class="container">
         <section id="about" class="tab-content active">
-            <div class="about-grid">
+            <div class="card about-grid">
                 <div class="about-image">
-                    <img src="images/linkedin_photo.jpeg" alt="Mya Moore Headshot">
+                    <img src="images/linkedin_photo.jpeg" alt="Mya Moore">
                 </div>
                 <div class="about-text">
-                    <h1>Hi, I'm Myawna Moore!</h1>
+                    <h1>Myawna Moore</h1>
                     <p class="subtitle">M.A. Student in Geography | University of Denver</p>
-                    <p>My academic interests focus on the connections between <strong>people, place, and health</strong>.</p>
+                    <p>I focus on the connections between people, place, and health, specifically how environmental patterns shape population well-being. I specialize in GIS analysis for natural hazards and public health.</p>
                     
-                    <div class="hobby-section">
-                        <h3>Apollo the Cat</h3>
-                        <img src="images/IMG_9761.png" alt="Apollo" class="hobby-img">
-                        
-                        <h3>Hobbies</h3>
+                    <div class="hobby-container">
+                        <h3>Apollo the Cat & Field Work</h3>
                         <div class="hobby-gallery">
-                            <img src="images/IMG_1091.png" alt="Hobby 1">
-                            <img src="images/IMG_9177.png" alt="Hobby 2">
+                            <img src="images/IMG_9761.png" alt="Apollo">
+                            <img src="images/IMG_1091.png" alt="Hiking">
+                            <img src="images/IMG_9177.png" alt="Field Study">
                         </div>
                     </div>
                 </div>
@@ -49,42 +47,80 @@
 
         <section id="projects" class="tab-content">
             <h2>GIS Projects</h2>
-            <p><em>Click on a project title to view more images.</em></p>
-
-            <div class="project-card">
-                <h3 class="popup-trigger" onclick="openModal('modal-gent')">Gentrification in Seattle, WA</h3>
-                <div class="project-grid">
-                    <div class="project-info">
-                        <p>Analyzing historical redlining and natural hazard zones using 2023-2024 ACS data.</p>
-                    </div>
+            <div class="project-list">
+                <div class="card project-card">
+                    <h3 class="popup-trigger" onclick="openModal('modal-gent')">Gentrification in Seattle, WA <i class="fas fa-expand-alt"></i></h3>
+                    <p>Analysis of historical redlining and demographic vulnerability using 2024 ACS estimates.</p>
                 </div>
-            </div>
 
-            <div class="project-card">
-                <h3 class="popup-trigger" onclick="openModal('modal-lidar')">LiDAR Landslide Analysis</h3>
-                <div class="project-grid">
-                    <div class="project-info">
-                        <p>Visualizing landslide susceptibility on Mercer Island using LiDAR surface models.</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/Lidar_Project_Map_1.png" alt="Lidar Overview">
+                <div class="card project-card">
+                    <h3 class="popup-trigger" onclick="openModal('modal-lidar')">LiDAR Landslide Analysis <i class="fas fa-expand-alt"></i></h3>
+                    <div class="project-split">
+                        <p>Visualizing landslide susceptibility on Mercer Island using high-resolution LiDAR data.</p>
+                        <img src="images/Lidar_Project_Map_1.png" alt="Lidar Map" class="preview-img">
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="resume" class="tab-content">
-            <h2>Resume</h2>
-            <p>Please see my LinkedIn profile for full experience and certifications.</p>
+            <div class="card resume-container">
+                <div class="resume-header">
+                    <h2>Professional Experience</h2>
+                    <a href="images/resume_2026_Mya_Moore.pdf" class="btn-download" download>
+                        <i class="fas fa-file-pdf"></i> Download PDF
+                    </a>
+                </div>
+
+                <div class="resume-body">
+                    <div class="resume-main">
+                        <div class="job-item">
+                            <h4>AI Trainer (Contract) | Handshake AI</h4>
+                            <span class="date">Dec 2025 – Present</span>
+                        </div>
+                        <div class="job-item">
+                            <h4>Graduate Teaching Assistant | University of Denver</h4>
+                            <span class="date">Sept 2024 – Present</span>
+                            <ul>
+                                <li>Developed ArcGIS Online dashboards from complex Excel datasets.</li>
+                            </ul>
+                        </div>
+                        <div class="job-item">
+                            <h4>GIS Mapping Specialist | Reagan Smith Inc.</h4>
+                            <span class="date">May 2023 – Aug 2024</span>
+                            <ul>
+                                <li>Executed 30 original plat books for the Ponca Tribe of Oklahoma.</li>
+                                <li>Georeferenced 500+ historical land records and streamlined geodatabases.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-sidebar">
+                        <h3>Education</h3>
+                        <p><strong>M.A. Geography</strong><br>University of Denver (2026)</p>
+                        <p><strong>B.A. Geography</strong><br>UCO (2023)</p>
+                        <h3>Skills</h3>
+                        <ul class="skills-tag">
+                            <li>ArcGIS Pro</li>
+                            <li>PostgreSQL</li>
+                            <li>LiDAR</li>
+                            <li>Python/R</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="tab-content">
-            <div class="contact-card">
+            <div class="card contact-card">
                 <h2>Let's Connect</h2>
-                <p>Email: <a href="mailto:myammoore14@gmail.com">myammoore14@gmail.com</a></p>
-                <div class="linkedin-container">
-                    <a href="https://www.linkedin.com/in/myawna-moore" target="_blank" class="linkedin-link">
-                        <i class="fab fa-linkedin"></i> View my LinkedIn Profile
+                <p>Feel free to reach out for collaborations or GIS inquiries.</p>
+                <div class="contact-links">
+                    <a href="mailto:myammoore14@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/myawna-moore" target="_blank" class="contact-btn linkedin">
+                        <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
             </div>
@@ -94,19 +130,19 @@
     <div id="modal-gent" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-gent')">&times;</span>
-            <h2>Gentrification in Washington</h2>
-            <img src="images/SEA_NRI_RED_map.png" alt="Seattle Analysis Map" class="modal-img">
+            <h2>Seattle Analysis</h2>
+            <img src="images/SEA_NRI_RED_map.png" alt="Seattle Map" class="modal-img">
         </div>
     </div>
 
     <div id="modal-lidar" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-lidar')">&times;</span>
-            <h2>LiDAR Project & Certifications</h2>
-            <div class="modal-gallery">
-                <img src="images/Cert1.png" alt="Certification 1">
-                <img src="images/Cert2.png" alt="Certification 2">
-                <img src="images/Cert3.png" alt="Certification 3">
+            <h2>LiDAR Certifications</h2>
+            <div class="cert-grid">
+                <img src="images/Cert1.png" alt="Cert 1">
+                <img src="images/Cert2.png" alt="Cert 2">
+                <img src="images/Cert3.png" alt="Cert 3">
             </div>
         </div>
     </div>
