@@ -25,40 +25,78 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 
-/* Resume Section */
-/* Sidebar Header Styling */
-.resume-sidebar h3 {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
-    margin-top: 25px;
-    font-size: 1rem;
-    color: var(--primary);
-    text-transform: uppercase;
+/* Resume Paper Container */
+.resume-paper {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px !important;
 }
 
-/* Sidebar Job Items */
-.job-item-mini {
-    margin-top: 10px;
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section h3 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.resume-item {
+    margin-bottom: 15px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.item-header span {
+    font-weight: 400;
+    color: #666;
     font-size: 0.9rem;
 }
 
-.job-item-mini strong {
-    display: block;
-    color: #333;
-    margin-bottom: 5px;
+/* Skills Layout */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* Sidebar List Styling */
-.mini-list {
-    padding-left: 18px;
-    margin: 0;
-    list-style-type: circle; /* Differentiates from the main work list */
-    color: #555;
-    line-height: 1.4;
+.skills-grid span {
+    background: #f0f4f8;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--primary);
+    border: 1px solid #d1d9e0;
 }
 
-.mini-list li {
-    margin-bottom: 5px;
+/* Lists */
+.resume-item ul {
+    margin-top: 5px;
+    padding-left: 20px;
+    color: #444;
+}
+
+.leadership-list {
+    list-style-type: circle;
+    margin-top: 8px;
 }
 
 /* Images */
