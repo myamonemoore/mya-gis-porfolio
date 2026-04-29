@@ -1,4 +1,78 @@
-<section id="resume" class="tab-content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mya Moore | GIS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">Mya Moore</span>
+            <ul class="nav-links">
+                <li><button class="tab-link active" onclick="openTab(event, 'about')">About</button></li>
+                <li><button class="tab-link" onclick="openTab(event, 'projects')">Projects</button></li>
+                <li><button class="tab-link" onclick="openTab(event, 'resume')">Resume</button></li>
+                <li><button class="tab-link" onclick="openTab(event, 'contact')">Contact</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="tab-content active">
+            <div class="card about-grid">
+                <div class="about-image">
+                    <img src="images/linkedin_photo.jpeg" alt="Mya Moore">
+                </div>
+                <div class="about-text">
+                    <h1>Myawna Moore</h1>
+                    <p class="subtitle">M.A. Student in Geography | University of Denver</p>
+                    <p>I focus on the connections between people, place, and health, specifically how environmental patterns shape population well-being.</p>
+                    
+                    <div class="hobby-container">
+                        <h3>Apollo the Cat & Field Work</h3>
+                        <div class="hobby-gallery">
+                            <img src="images/IMG_9761.jpg" alt="Apollo">
+                            <img src="images/IMG_1091.jpg" alt="Hiking">
+                            <img src="images/IMG_9177.jpg" alt="Field Study">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-content">
+            <h2>GIS Projects</h2>
+            <div class="project-list">
+                <div class="card project-card">
+                    <h3 class="popup-trigger" onclick="openModal('modal-gent')">Gentrification in Seattle, WA <i class="fas fa-expand-alt"></i></h3>
+                    <p>Analysis of historical redlining and demographic vulnerability.</p>
+                </div>
+
+                <div class="card project-card">
+                    <h3 class="popup-trigger" onclick="openModal('modal-lidar')">LiDAR Landslide Analysis <i class="fas fa-expand-alt"></i></h3>
+                    <div class="project-split">
+                        <p>Visualizing landslide susceptibility on Mercer Island.</p>
+                        <img src="images/Lidar_Project_Map_1.jpg" alt="Lidar Map" class="preview-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="tab-content">
+            <div class="card resume-container">
+                <div class="resume-header">
+                    <h2>Professional Experience</h2>
+                    <a href="images/resume_2026_Mya_Moore.pdf" class="btn-download" download>
+                        <i class="fas fa-file-pdf"></i> Download PDF
+                    </a>
+                </div>
+
+                <section id="resume" class="tab-content">
     <div class="card resume-paper">
         <!-- Header with Download -->
         <div class="resume-header">
@@ -89,3 +163,38 @@
         </div>
     </div>
 </section>
+
+        <section id="contact" class="tab-content">
+            <div class="card contact-card">
+                <h2>Let's Connect</h2>
+                <div class="contact-links">
+                    <a href="mailto:myammoore14@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://www.linkedin.com/in/myawna-moore" target="_blank" class="contact-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-gent" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-gent')">&times;</span>
+            <h2>Seattle Analysis</h2>
+            <img src="images/SEA_NRI_RED_map.png" alt="Seattle Map" class="modal-img">
+        </div>
+    </div>
+
+    <div id="modal-lidar" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-lidar')">&times;</span>
+            <h2>LiDAR Certifications</h2>
+            <div class="cert-grid">
+                <img src="images/Cert1.png" alt="Cert 1">
+                <img src="images/Cert2.png" alt="Cert 2">
+                <img src="images/Cert3.png" alt="Cert 3">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
