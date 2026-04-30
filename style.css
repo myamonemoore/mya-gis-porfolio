@@ -26,6 +26,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; }
 .tab-content.active { display: block; }
 
 /* Resume Paper Container */
+/* Resume Paper Container */
 .resume-paper {
     max-width: 850px;
     margin: 0 auto;
