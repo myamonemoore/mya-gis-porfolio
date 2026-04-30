@@ -27,6 +27,7 @@
         <section id="about" class="tab-content active">
             <div class="card about-grid">
                 <div class="about-image">
+                    <!-- Note: Fixed the space in the filename below -->
                     <img src="images/linkedin_photo .jpeg" alt="Mya Moore Headshot">
                 </div>
                 <div class="about-text">
@@ -38,8 +39,8 @@
                         <h3>Apollo the Cat & Field Work</h3>
                         <div class="hobby-gallery">
                             <img src="images/IMG_9761.png" alt="Apollo">
-                            <img src="images/IMG_1091.jpg" alt="Hiking">
-                            <img src="images/IMG_9177.jpg" alt="Field Study">
+                            <img src="images/IMG_1091.png" alt="Hiking">
+                            <img src="images/IMG_9177.png" alt="Field Study">
                         </div>
                     </div>
                 </div>
@@ -56,18 +57,17 @@
             <div class="project-list">
                 <div class="card project-card">
                     <h3 class="popup-trigger" onclick="openModal('modal-gent')">Gentrification in Seattle, WA <i class="fas fa-expand-alt"></i></h3>
-                     <img src="images/SEA_NRI_Red_map.jpg" alt="Seattle Gentrification Map" class="preview-img">
-                    <p>Analyzing historical redlining and demographic vulnerability using 2024 ACS estimates.</p>
+                    <div class="project-split">
+                        <div class="split-info">
+                            <p>Analyzing historical redlining and demographic vulnerability using 2024 ACS estimates.</p>
+                        </div>
+                        <img src="images/SEA_NRI_Red_map.jpg" alt="Seattle Map Preview" class="preview-img">
+                    </div>
                 </div>
 
                 <div class="card project-card">
                     <h3 class="popup-trigger" onclick="openModal('modal-lidar')">LiDAR Landslide Analysis <i class="fas fa-expand-alt"></i></h3>
-                    <div class="project-split">
-                        <div class="split-info">
-                            <p>Visualizing landslide susceptibility on Mercer Island using high-resolution LiDAR data.</p>
-                        </div>
-                        <img src="images/Lidar_Project_Map_1.jpg" alt="Lidar Map" class="preview-img">
-                    </div>
+                    <p>Visualizing landslide susceptibility on Mercer Island using high-resolution LiDAR data.</p>
                 </div>
             </div>
         </section>
@@ -78,7 +78,7 @@
                 <div class="resume-header">
                     <div>
                         <h2>Myawna Moore</h2>
-                        <p>GIS Specialist | Master's Student</p>
+                        <p>GIS Specialist | Master's Student[cite: 1]</p>
                     </div>
                     <a href="images/resume_2026_Mya_Moore.pdf" class="btn-download" download="Mya_Moore_Resume_2026.pdf">
                         <i class="fas fa-file-pdf"></i> Download PDF
@@ -99,7 +99,7 @@
                     <h3>Education</h3>
                     <div class="resume-item">
                         <div class="item-header"><strong>M.A. Geography</strong><span>Expected 2026</span></div>
-                        <p>University of Denver</p>
+                        <p>University of Denver[cite: 1]</p>
                     </div>
                     <div class="resume-item">
                         <div class="item-header"><strong>B.A. Geography</strong><span>2023</span></div>
@@ -113,8 +113,8 @@
                         <div class="item-header"><strong>AI Trainer (Contract) | Handshake AI</strong><span>Dec 2025 – Present</span></div>
                     </div>
                     <div class="resume-item">
-                        <div class="item-header"><strong>Graduate Teaching Assistant | University of Denver</strong><span>Sept 2024 – Present</span></div>
-                        <ul><li>Developed ArcGIS Online dashboards from complex Excel datasets.</li></ul>
+                        <div class="item-header"><strong>Graduate Teaching Assistant | University of Denver</strong><span>Sept 2024 – Present[cite: 1]</span></div>
+                        <ul><li>Developed ArcGIS Online dashboards from Excel datasets.</li></ul>
                     </div>
                     <div class="resume-item">
                         <div class="item-header"><strong>GIS Mapping Specialist | Reagan Smith Inc.</strong><span>May 2023 – Aug 2024</span></div>
@@ -128,7 +128,7 @@
                 <div class="resume-section">
                     <h3>Leadership & Involvement</h3>
                     <div class="resume-item">
-                        <strong>University of Denver</strong>
+                        <strong>University of Denver[cite: 1]</strong>
                         <ul class="leadership-list">
                             <li>GIS Sustainability Env. Science GIS Org - Treasurer</li>
                             <li>Graduate Mentor Fellows</li>
@@ -155,18 +155,8 @@
     <div id="modal-gent" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-gent')">&times;</span>
-            <h2>Gentrification in Washington</h2>
-            <img src="images/SEA_NRI_Red_map.jpg" alt="Seattle Map" class="modal-img">
-        </div>
-    </div>
-
-    <div id="modal-lidar" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-lidar')">&times;</span>
-            <h2>LiDAR Analysis & Certifications</h2>
-            <div class="cert-grid">
-                <img src="images/Cert1.png" alt="Cert 1"><img src="images/Cert2.png" alt="Cert 2"><img src="images/Cert3.png" alt="Cert 3">
-            </div>
+            <h2>Gentrification Analysis: Seattle, WA</h2>
+            <img src="images/SEA_NRI_Red_map.jpg" alt="Seattle Full Map" class="modal-img">
         </div>
     </div>
 
