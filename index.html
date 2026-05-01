@@ -37,7 +37,7 @@
                     
                     <div class="hobby-container">
                         <h3>Hobbies</h3>
-                        <h1>I love to hike and take my cat, Apollo, on walks</h1>
+                        <p>I love to hike and take my cat, Apollo, on walks</h1>
                         <div class="hobby-gallery">
                             <img src="images/IMG_9761.png" alt="Apollo">
                             <img src="images/IMG_1091.png" alt="Hiking">
@@ -67,13 +67,16 @@
                 </div>
 
                 <div class="card project-card">
-                    <h3 class="popup-trigger" onclick="openModal('modal-lidar')">LiDAR Landslide Analysis <i class="fas fa-expand-alt"></i></h3>
-                    <p>Visualizing landslide susceptibility on Mercer Island using high-resolution LiDAR data.</p>
-                </div>
-                <img src="images/Lidar_Project_Map_1.png" alt="Lidar Map Preview" class="preview-img">
-            </div>
-            </div>
+    <h3 class="popup-trigger" onclick="openModal('modal-lidar')">LiDAR Landslide Analysis <i class="fas fa-expand-alt"></i></h3>
+    <div class="project-split">
+        <div class="split-info">
+            <p>Visualizing landslide susceptibility on Mercer Island using high-resolution LiDAR data.</p>
+        </div>
+        <img src="images/Lidar_Project_Map_1.jpg" alt="Lidar Map Preview" class="preview-img">
+    </div>
+</div>
         </section>
+
 
         <!-- RESUME SECTION -->
         <section id="resume" class="tab-content">
@@ -97,8 +100,6 @@
                         <span>ArcGIS Online Dashboards</span><span>Spatial Analysis (SPSS+)</span>
                     </div>
                 </div>
-            </div>
-            </section>
 
                 <div class="resume-section">
                     <h3>Education</h3>
@@ -141,9 +142,13 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
+            </div> <!-- THIS DIV CLOSES THE CARD -->
+        </section> <!-- THIS TAG CLOSES THE SECTION -->
 
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="tab-content">
+            <!-- Contact info here -->
+        </section>
         <!-- CONTACT SECTION -->
         <section id="contact" class="tab-content">
             <div class="card contact-card">
