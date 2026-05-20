@@ -59,22 +59,24 @@
         </section>
 
         <!-- PROJECTS SECTION -->
-        <section id="projects" class="tab-content">
-            <div class="section-header">
-                <h2>GIS Projects</h2>
-                <p><em>Click a title to view analysis maps and details.</em></p>
-            </div>
-            
-            <div class="project-list">
-                <div class="card project-card">
-                    <h3 class="popup-trigger" onclick="openModal('modal-gent')">Gentrification in Seattle, WA <i class="fas fa-expand-alt"></i></h3>
-                    <div class="project-split">
-                        <div class="split-info">
-                            <p>Analyzing historical redlining and demographic vulnerability using 2024 ACS estimates.</p>
-                        </div>
-                        <img src="images/Seattle_red_new.jpg" alt="Seattle Map Preview" class="preview-img">
-                    </div>
-                </div>
+      <div class="card">
+  <h2>Hazard Gentrification & Environmental Justice</h2>
+
+  <img src="images/Seattle_red_new.jpg"
+       alt="Seattle Redlining Preview"
+       class="project-image medium-preview" />
+
+  <p>
+    This project evaluates how historical redlining spatially aligns with
+    demographic distribution, hazard exposure, and socioeconomic change
+    across Seattle, Washington.
+  </p>
+
+  <button class="popup-btn"
+          onclick="openModal('gentrificationModal')">
+    View Full Project
+  </button>
+</div>
 
                 <div class="card project-card">
     <h3 class="popup-trigger" onclick="openModal('modal-lidar')">LiDAR Landslide Analysis <i class="fas fa-expand-alt"></i></h3>
@@ -172,13 +174,97 @@
     </section>
 
     <!-- MODALS -->
-    <div id="modal-gent" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-gent')">&times;</span>
-            <h2>Gentrification Analysis: Seattle, WA</h2>
-            <img src="images/Seattle_red_new.jpg" alt="Seattle Full Map" ><<img src="images/Seattle_New.jpg" alt="Seattle Full Map">
-        </div>
+   <div id="gentrificationModal" class="modal">
+  <div class="modal-content large-modal">
+
+    <span class="close"
+          onclick="closeModal('gentrificationModal')">
+      &times;
+    </span>
+
+    <h2>Hazard Gentrification & Environmental Justice</h2>
+
+    <p>
+      This project explores how historical redlining spatially aligns with
+      race, income, education, and natural hazard exposure in Seattle,
+      Washington.
+    </p>
+
+    <p>
+      The research evaluates whether low-income and minority populations
+      are disproportionately distributed in natural hazard zones and
+      whether those communities may face increased risk of hazard
+      gentrification and displacement.
+    </p>
+
+    <p>
+      The project also investigates whether changes in ACS census data
+      between the 2023 and 2024 5-year estimates display patterns
+      associated with gentrification in historically redlined areas.
+    </p>
+
+    <h3>Research Questions</h3>
+
+    <ul class="project-list">
+      <li>
+        How does historical redlining spatially align with the demographic
+        distribution of race, income, and education in Seattle?
+      </li>
+
+      <li>
+        Are low-income and minority demographics distributed in natural
+        hazard zones, and could this increase vulnerability to hazard
+        gentrification?
+      </li>
+
+      <li>
+        Do ACS demographic changes between 2023 and 2024 suggest
+        gentrification patterns within historically redlined areas?
+      </li>
+    </ul>
+
+    <h3>Data Sources</h3>
+
+    <ul class="project-list">
+      <li>
+        American Community Survey — DP05 ACS Demographic and Housing Estimates
+      </li>
+
+      <li>
+        Mapping Inequality: Redlining in New Deal America
+      </li>
+
+      <li>
+        Seattle Hazard Explorer
+      </li>
+    </ul>
+
+    <div class="project-links">
+      <a href="https://dsl.richmond.edu/panorama/redlining/"
+         target="_blank">
+         Redlining Dataset
+      </a>
+
+      <a href="https://experience.arcgis.com/experience/2acb05d732134331bc05214740076373"
+         target="_blank">
+         Seattle Hazard Explorer
+      </a>
     </div>
+
+    <div class="modal-gallery">
+
+      <img src="images/Seattle_red_new.jpg"
+           alt="Seattle Redlining Map"
+           class="modal-img medium-modal-img" />
+
+      <img src="images/Seattle_New.jpg"
+           alt="Seattle Demographic Analysis"
+           class="modal-img medium-modal-img" />
+
+    </div>
+
+  </div>
+</div>
     
     <div id="modal-lidar" class="modal">
         <div class="modal-content">
@@ -186,7 +272,60 @@
             <h2>LiDAR Analysis & Certifications</h2>
             <div class="cert-grid">
                 <img src="images/Lidar_Project_Map_1.jpg" alt="Lidar Full Map" class="modal-img">
-        <p style="margin-top: 15px;">Detailed terrain analysis using DEM and Point Cloud data to identify high-risk landslide zones.</p>
+        <p>
+  In these models I began to clearly visualize areas that may be
+  susceptible to landslides due to cracks, depressions, and terrain
+  shading along the coast of Mercer Island and near the I-90 highway
+  corridor.
+</p>
+
+<p>
+  The final result map contains four map views illustrating different
+  approaches to landslide susceptibility analysis using LiDAR-derived
+  terrain data.
+</p>
+
+<p>
+  The DEM landslide risk model was created by reclassifying elevation
+  values to identify areas at or above 500 as potentially susceptible
+  to landslides based on findings from previous LiDAR landslide studies.
+</p>
+
+<p>
+  The LiDAR slope model highlights lighter terrain areas that may
+  indicate higher landslide susceptibility along the I-90 corridor
+  and the outer portions of Mercer Island.
+</p>
+
+<p>
+  The LiDAR hillshade model reveals depressions, cracks, and terrain
+  irregularities that may correspond with potential landslide activity.
+</p>
+
+<p>
+  The final landslide risk map incorporates City of Mercer Island
+  landslide risk data, showing documented landslide locations and
+  potential hazard zones.
+</p>
+
+<p>
+  Together, the map views illustrate that the areas most susceptible
+  to landslides are concentrated along the I-90 corridor and the
+  outer slopes surrounding Mercer Island.
+</p>
+
+<h3>Data Source</h3>
+
+<p>
+  USGS 3DEP WA_KingCounty_2021_B21
+</p>
+
+<div class="project-links">
+  <a href="https://apps.nationalmap.gov/lidar-explorer/#/"
+     target="_blank">
+     USGS LiDAR Explorer
+  </a>
+</div>
                 <img src="images/Cert1.png" alt="Cert 1"><img src="images/Cert2.png" alt="Cert 2"><img src="images/Cert3.png" alt="Cert 3">
             </div>
         </div>
