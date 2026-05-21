@@ -1,19 +1,19 @@
-function openTab(tabId, buttonElement) {
+function openTab(tabId, button) {
 
     const tabs = document.querySelectorAll('.tab-content');
     const buttons = document.querySelectorAll('.tab-btn');
 
     tabs.forEach(tab => {
-        tab.classList.remove('active');
+        tab.style.display = 'none';
     });
 
-    buttons.forEach(button => {
-        button.classList.remove('active');
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
     });
 
-    document.getElementById(tabId).classList.add('active');
+    document.getElementById(tabId).style.display = 'block';
 
-    buttonElement.classList.add('active');
+    button.classList.add('active');
 }
 
 /* ---------- MODALS ---------- */
@@ -26,7 +26,7 @@ function closeModal(modalId) {
     document.getElementById(modalId).style.display = 'none';
 }
 
-/* ---------- CLOSE MODAL WHEN CLICKING OUTSIDE ---------- */
+/* ---------- CLOSE MODAL OUTSIDE CLICK ---------- */
 
 window.onclick = function(event) {
 
@@ -41,3 +41,11 @@ window.onclick = function(event) {
     });
 
 }
+
+/* ---------- DEFAULT TAB ---------- */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    document.getElementById('about').style.display = 'block';
+
+});
