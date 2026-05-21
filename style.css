@@ -306,9 +306,9 @@ window.onclick = function(event) {
 }
 
 .gallery-image {
-    width: 45%;
-    min-width: 280px;
-    border-radius: 12px;
+    width: 65%;
+    min-width: 400px;
+    border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
