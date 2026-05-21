@@ -1,3 +1,12 @@
+# PROFESSIONAL GIS PORTFOLIO REBUILD
+
+Replace your existing files completely with the following versions.
+
+---
+
+# index.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,4 +59,265 @@
             onclick="openTab('contact', this)">
             Contact
     </button>
+
+</nav>
+
+<main>
+
+<!-- ABOUT -->
+<section id="about" class="tab-content active">
+
+    <div class="content-card about-layout">
+
+        <div class="about-photo">
+            <img src="images/linkedin_photo.jpeg"
+                 alt="Mya Moore">
+        </div>
+
+        <div class="about-text">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am a graduate geography researcher and GIS specialist focused on
+                climate displacement, hazard vulnerability, environmental justice,
+                and spatial analysis. My work combines GIS, LiDAR terrain analysis,
+                hazard mapping, demographic analysis, and geospatial visualization
+                to better understand how environmental risk impacts communities.
+            </p>
+
+            <p>
+                My research interests include climate adaptation, disaster risk,
+                hazard mitigation, public health geography, environmental justice,
+                and climate-driven displacement.
+            </p>
+
+            <div class="hobbies">
+
+                <h3>Outside of GIS</h3>
+
+                <p>
+                    I enjoy hiking, field exploration, and taking my cat Apollo on walks.
+                </p>
+
+                <div class="hobby-gallery">
+
+                    <img src="images/IMG_9761.png">
+                    <img src="images/IMG_1091.png">
+                    <img src="images/IMG_9177.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="tab-content">
+
+    <!-- SEATTLE -->
+    <div class="project-card">
+
+        <h2>Hazard Gentrification & Environmental Justice</h2>
+
+        <img src="images/Seattle_red_new.jpg"
+             class="project-preview-image">
+
+        <p>
+            Spatial analysis of historical redlining, demographic change,
+            hazard exposure, and environmental justice patterns across Seattle.
+        </p>
+
+        <button class="project-button"
+                onclick="openModal('seattleModal')">
+                View Project
+        </button>
+
+    </div>
+
+    <!-- LIDAR -->
+    <div class="project-card">
+
+        <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
+
+        <img src="images/Lidar_Project_Map_1.jpg"
+             class="project-preview-image">
+
+        <p>
+            LiDAR terrain analysis, DEM classification, slope modeling,
+            and hillshade visualization for landslide susceptibility assessment.
+        </p>
+
+        <button class="project-button"
+                onclick="openModal('lidarModal')">
+                View Project
+        </button>
+
+    </div>
+
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="tab-content">
+
+    <div class="content-card">
+
+        <div class="resume-header">
+
+            <div>
+                <h2>Resume</h2>
+                <p>GIS • Spatial Analysis • Hazard Geography • Research</p>
+            </div>
+
+            <a href="images/Resume_2026_Mya_Moore.pdf"
+               download
+               class="download-button">
+               Download Resume
+            </a>
+
+        </div>
+
+        <embed src="images/Resume_2026_Mya_Moore.pdf"
+               type="application/pdf"
+               class="resume-pdf">
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="tab-content">
+
+    <div class="content-card contact-card">
+
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+
+            <a href="mailto:myammoore14@gmail.com"
+               class="contact-link">
+               <i class="fas fa-envelope"></i>
+               Email
+            </a>
+
+            <a href="https://www.linkedin.com/in/myawna-moore"
+               target="_blank"
+               class="contact-link">
+               <i class="fab fa-linkedin"></i>
+               LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- SEATTLE MODAL -->
+<div id="seattleModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close"
+              onclick="closeModal('seattleModal')">
+              &times;
+        </span>
+
+        <h2>Hazard Gentrification & Environmental Justice</h2>
+
+        <img src="images/Seattle_red_new.jpg"
+             class="modal-main-image">
+
+        <div class="modal-description">
+
+            <p>
+                This project evaluates how historical redlining spatially aligns
+                with race, income, education, and natural hazard exposure across
+                Seattle, Washington.
+            </p>
+
+            <p>
+                The research investigates whether low-income and minority
+                populations are disproportionately distributed in natural hazard
+                zones and whether those communities may face increased risk of
+                hazard gentrification and climate-driven displacement.
+            </p>
+
+        </div>
+
+        <div class="modal-gallery">
+
+            <img src="images/Seattle_red_new.jpg"
+                 class="gallery-image">
+
+            <img src="images/Seattle_New.jpg"
+                 class="gallery-image">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- LIDAR MODAL -->
+<div id="lidarModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close"
+              onclick="closeModal('lidarModal')">
+              &times;
+        </span>
+
+        <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
+
+        <img src="images/Lidar_Project_Map_1.jpg"
+             class="modal-main-image">
+
+        <div class="modal-description">
+
+            <p>
+                This project visualizes landslide susceptibility across Mercer
+                Island using LiDAR-derived DEMs, slope analysis, hillshade
+                modeling, and terrain classification techniques.
+            </p>
+
+            <p>
+                Multiple terrain models revealed elevated landslide risk near
+                the I-90 corridor and the outer slopes of Mercer Island.
+            </p>
+
+            <p>
+                Together, the models demonstrate how LiDAR terrain visualization
+                supports hazard mitigation planning and geospatial risk assessment.
+            </p>
+
+        </div>
+
+        <div class="modal-gallery">
+
+            <img src="images/Cert1.png"
+                 class="gallery-image">
+
+            <img src="images/Cert2.png"
+                 class="gallery-image">
+
+            <img src="images/Cert3.png"
+                 class="gallery-image">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
