@@ -80,17 +80,39 @@
   </button>
 </div>
 
-                <div class="card project-card">
-    <h3 class="popup-trigger" onclick="openModal('modal-lidar')">LiDAR Landslide Analysis <i class="fas fa-expand-alt"></i></h3>
-    <div class="project-split">
-        <div class="split-info">
-            <p>Visualizing landslide susceptibility on Mercer Island using high-resolution LiDAR data.</p>
-        </div>
-        <img src="images/Lidar_Project_Map_1.jpg" alt="Lidar Map Preview" class="preview-img">
-    </div>
-</div>
-        </section>
+          <!-- LiDAR PROJECT -->
+<div class="project-card">
 
+    <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
+
+    <img
+        src="images/Lidar_Project_Map_1.jpg"
+        alt="LiDAR Landslide Analysis"
+        class="medium-preview lidar-main-preview"
+    />
+
+    <p>
+        This project applies LiDAR-derived DEM analysis, slope modeling,
+        hillshade visualization, and terrain classification techniques to
+        identify potential landslide susceptibility zones across Mercer Island,
+        Washington.
+    </p>
+
+    <p>
+        Multiple terrain models revealed elevated landslide risk along the
+        I-90 transportation corridor and the outer coastal slopes of Mercer
+        Island, demonstrating how high-resolution elevation data can support
+        hazard mitigation and environmental planning workflows.
+    </p>
+
+    <button
+        class="popup-trigger"
+        onclick="openModal('modal-lidar')"
+    >
+        View Full Project
+    </button>
+
+</div>
 
         <!-- RESUME SECTION -->
         <section id="resume" class="tab-content">
@@ -267,71 +289,94 @@
   </div>
 </div>
     
-    <div id="modal-lidar" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal-lidar')">&times;</span>
-            <h2>LiDAR Analysis & Certifications</h2>
-            <div class="cert-grid">
-                <img src="images/Lidar_Project_Map_1.jpg" alt="Lidar Full Map" class="modal-img">
-        <p>
-  In these models I began to clearly visualize areas that may be
-  susceptible to landslides due to cracks, depressions, and terrain
-  shading along the coast of Mercer Island and near the I-90 highway
-  corridor.
-</p>
+   <!-- LiDAR MODAL -->
+<div id="modal-lidar" class="modal">
+  <div class="modal-content lidar-modal">
 
-<p>
-  The final result map contains four map views illustrating different
-  approaches to landslide susceptibility analysis using LiDAR-derived
-  terrain data.
-</p>
+    <span class="close" onclick="closeModal('modal-lidar')">&times;</span>
 
-<p>
-  The DEM landslide risk model was created by reclassifying elevation
-  values to identify areas at or above 500 as potentially susceptible
-  to landslides based on findings from previous LiDAR landslide studies.
-</p>
+    <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
 
-<p>
-  The LiDAR slope model highlights lighter terrain areas that may
-  indicate higher landslide susceptibility along the I-90 corridor
-  and the outer portions of Mercer Island.
-</p>
+    <!-- MAIN FEATURE IMAGE -->
+    <img
+      src="images/Lidar_Project_Map_1.jpg"
+      alt="LiDAR Landslide Project"
+      class="lidar-hero-image"
+    />
 
-<p>
-  The LiDAR hillshade model reveals depressions, cracks, and terrain
-  irregularities that may correspond with potential landslide activity.
-</p>
+    <!-- PROJECT DESCRIPTION -->
+    <div class="lidar-description">
 
-<p>
-  The final landslide risk map incorporates City of Mercer Island
-  landslide risk data, showing documented landslide locations and
-  potential hazard zones.
-</p>
+      <p>
+        This project visualizes landslide susceptibility across Mercer Island,
+        Washington using LiDAR-derived terrain models, DEM analysis, hillshade
+        modeling, and slope classification techniques.
+      </p>
 
-<p>
-  Together, the map views illustrate that the areas most susceptible
-  to landslides are concentrated along the I-90 corridor and the
-  outer slopes surrounding Mercer Island.
-</p>
+      <p>
+        The final map compares multiple terrain representations to identify
+        potential landslide risk zones concentrated near the I-90 highway
+        corridor and along the outer slopes of Mercer Island.
+      </p>
 
-<h3>Data Source</h3>
+      <p>
+        The DEM classification model reclassified elevation values above 500
+        as potentially susceptible areas based on previous LiDAR landslide
+        studies.
+      </p>
 
-<p>
-  USGS 3DEP WA_KingCounty_2021_B21
-</p>
+      <p>
+        Hillshade and slope models revealed depressions, cracks, terrain
+        irregularities, and steep slope gradients associated with potential
+        landslide activity.
+      </p>
 
-<div class="project-links">
-  <a href="https://apps.nationalmap.gov/lidar-explorer/#/"
-     target="_blank">
-     USGS LiDAR Explorer
-  </a>
-</div>
-                <img src="images/Cert1.png" alt="Cert 1"><img src="images/Cert2.png" alt="Cert 2"><img src="images/Cert3.png" alt="Cert 3">
-            </div>
-        </div>
+      <p>
+        Together, the models demonstrate how LiDAR terrain visualization can
+        support hazard mitigation planning and geospatial risk assessment.
+      </p>
+
+      <div class="lidar-source">
+        <strong>Data Source:</strong><br>
+        USGS 3DEP — WA_KingCounty_2021_B21
+      </div>
+
+      <div class="project-links">
+        <a
+          href="https://apps.nationalmap.gov/lidar-explorer/#/"
+          target="_blank"
+        >
+          USGS LiDAR Explorer
+        </a>
+      </div>
+
     </div>
 
+    <!-- SUPPORTING IMAGES -->
+    <div class="lidar-gallery">
+
+      <img
+        src="images/Cert1.png"
+        alt="LiDAR Certification 1"
+        class="lidar-small-image"
+      />
+
+      <img
+        src="images/Cert2.png"
+        alt="LiDAR Certification 2"
+        class="lidar-small-image"
+      />
+
+      <img
+        src="images/Cert3.png"
+        alt="LiDAR Certification 3"
+        class="lidar-small-image"
+      />
+
+    </div>
+
+  </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
