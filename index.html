@@ -4,340 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mya Moore | GIS Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <span class="logo">MYA MOORE</span>
-            <ul class="nav-links">
-                <li><button class="tab-btn active" onclick="openTab('About', this)">About</button></li>
-                <li><button class="tab-btn" onclick="openTab('Projects', this)">Projects</button></li>
-                <li><button class="tab-btn" onclick="openTab('Resume', this)">Resume</button></li>
-                <li><button class="tab-btn" onclick="openTab('Contact', this)">Contact</button></li>
-            </ul>
-        </div>
-    </nav>
+<header class="hero">
 
-    <main class="container">
-        <!-- ABOUT SECTION -->
-        <section id="about" class="tab-content active">
-            <div class="card about-grid">
-                <div class="about-image">
-                    <!-- Note: Fixed the space in the filename below -->
-                    <img src="images/linkedin_photo .jpeg" alt="Mya Moore Headshot">
-                </div>
-                <div class="about-text">
-                    <h1>Hi, I'm Mya Moore!</h1>
-                    <p class="subtitle">M.A. Student in Geography | University of Denver</p>
-                    <p>
-                        Hi, I am Myawna Moore, but you can call me Mya!
-                        I am a second-year Master of Arts student in Geography at the University of Denver, and I hold a
-                        Bachelor of Arts in Geography from the University of Central Oklahoma. My academic interests
-                        focus on the connections between people, place, and health, particularly how environmental
-                        conditions and spatial patterns shape population well-being. I study human–environment
-                        interactions, sustainability, and Geographic Information Science (GIS), and I use mapping and
-                        spatial analysis to examine natural hazards and disaster risk, epidemiology, and broader public
-                        health issues.
+    <img src="images/header-map.png"
+         alt="GIS Header"
+         class="hero-image">
 
-                    </p>
-                    
-                    <div class="hobby-container">
-                        <h3>Hobbies</h3>
-                        <p>I love to hike and take my cat, Apollo, on walks</h1>
-                        <div class="hobby-gallery">
-                            <img src="images/IMG_9761.png" alt="Apollo">
-                            <img src="images/IMG_1091.png" alt="Hiking">
-                            <img src="images/IMG_9177.png" alt="Field Study">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- PROJECTS -->
-<section id="projects" class="tab-content">
-
-    <!-- SEATTLE PROJECT -->
-    <div class="project-card">
-
-        <h2>Hazard Gentrification & Environmental Justice</h2>
-
-        <img
-            src="images/Seattle_red_new.jpg"
-            alt="Seattle Redlining Project"
-            class="project-preview-image"
-        />
-
+    <div class="hero-overlay">
+        <h1>Mya Moore</h1>
         <p>
-            This project evaluates how historical redlining spatially aligns
-            with race, income, education, and natural hazard exposure across
-            Seattle, Washington.
+            GIS Specialist • Geography Graduate Researcher • Hazard & Climate Risk Analysis
         </p>
-
-        <button
-            class="project-button"
-            onclick="openModal('gentrificationModal')"
-        >
-            View Full Project
-        </button>
-
     </div>
 
-    <!-- LIDAR PROJECT -->
-    <div class="project-card">
+</header>
 
-        <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
+<nav class="navbar">
 
-        <img
-            src="images/Lidar_Project_Map_1.jpg"
-            alt="LiDAR Landslide Analysis"
-            class="project-preview-image"
-        />
+    <button class="tab-btn active"
+            onclick="openTab('about', this)">
+            About
+    </button>
 
-        <p>
-            LiDAR-derived DEM analysis, hillshade modeling, and terrain
-            classification techniques were used to identify potential
-            landslide susceptibility zones across Mercer Island,
-            Washington.
-        </p>
+    <button class="tab-btn"
+            onclick="openTab('projects', this)">
+            Projects
+    </button>
 
-        <button
-            class="project-button"
-            onclick="openModal('modal-lidar')"
-        >
-            View Full Project
-        </button>
+    <button class="tab-btn"
+            onclick="openTab('resume', this)">
+            Resume
+    </button>
 
-    </div>
-
-</section>
-
-       
-        <!-- RESUME SECTION -->
-        <section id="resume" class="tab-content">
-            <div class="card resume-paper">
-                <div class="resume-header">
-                    <div>
-                        <h2>Myawna Moore</h2>
-                        <p>GIS Specialist | Master's Student</p>
-                    </div>
-                    <a href="images/resume_2026_Mya_Moore.pdf" class="btn-download" download="Mya_Moore_Resume_2026.pdf">
-                        <i class="fas fa-file-pdf"></i> Download PDF
-                    </a>
-                </div>
-
-                <div class="resume-section">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <span>ESRI ArcGIS Enterprise</span><span>PostgreSQL</span>
-                        <span>LiDAR & Data Processing</span><span>Python & R</span>
-                        <span>QGIS</span><span>Georeferencing & Digitizing</span>
-                        <span>ArcGIS Online Dashboards</span><span>Spatial Analysis (SPSS+)</span>
-                    </div>
-                </div>
-
-                <div class="resume-section">
-                    <h3>Education</h3>
-                    <div class="resume-item">
-                        <div class="item-header"><strong>M.A. Geography</strong><span>Expected 2026</span></div>
-                        <p>University of Denver</p>
-                    </div>
-                    <div class="resume-item">
-                        <div class="item-header"><strong>B.A. Geography</strong><span>2023</span></div>
-                        <p>University of Central Oklahoma (UCO)</p>
-                    </div>
-                </div>
-
-                <div class="resume-section">
-                    <h3>Professional Experience</h3>
-                    <div class="resume-item">
-                        <div class="item-header"><strong>AI Trainer (Contract) | Handshake AI</strong><span>Dec 2025 – Present</span></div>
-                    </div>
-                    <div class="resume-item">
-                        <div class="item-header"><strong>Graduate Teaching Assistant | University of Denver</strong><span>Sept 2024 – Present</span></div>
-                        <ul><li>Developed ArcGIS Online dashboards from Excel datasets.</li></ul>
-                    </div>
-                    <div class="resume-item">
-                        <div class="item-header"><strong>GIS Mapping Specialist | Reagan Smith Inc.</strong><span>May 2023 – Aug 2024</span></div>
-                        <ul>
-                            <li>Designed 30 original plat books for the Ponca Tribe of Oklahoma.</li>
-                            <li>Georeferenced 500+ historical land records.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="resume-section">
-                    <h3>Leadership & Involvement</h3>
-                    <div class="resume-item">
-                        <strong>University of Denver</strong>
-                        <ul class="leadership-list">
-                            <li>GIS Sustainability Env. Science GIS Org - Treasurer</li>
-                            <li>Graduate Mentor Fellows</li>
-                            <li>Undergraduate Peer Mentor</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- THIS DIV CLOSES THE CARD -->
-        </section> <!-- THIS TAG CLOSES THE SECTION -->
-
-        
-       <!-- CONTACT SECTION -->
-    <section id="contact" class="tab-content">
-        <div class="card contact-card">
-            <h2>Let's Connect</h2>
-            <div class="contact-links">
-                <a href="mailto:myammoore14@gmail.com" class="contact-btn">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/myawna-moore" target="_blank" class="contact-btn linkedin">
-                    <i class="fab fa-linkedin"></i> LinkedIn Profile
-                </a>
-            </div>
-        </div>
-    </section>
-</main>
-    <!-- MODALS -->
-  <!-- MODALS -->
-
-<!-- SEATTLE MODAL -->
-<div id="gentrificationModal" class="modal">
-
-    <div class="modal-content">
-
-        <span class="close"
-              onclick="closeModal('gentrificationModal')">
-              &times;
-        </span>
-
-        <h2>Hazard Gentrification & Environmental Justice</h2>
-
-        <img
-            src="images/Seattle_red_new.jpg"
-            alt="Seattle Redlining"
-            class="modal-main-image"
-        />
-
-        <div class="project-description">
-
-            <p>
-                This project explores how historical redlining spatially aligns
-                with race, income, education, and natural hazard exposure in
-                Seattle, Washington.
-            </p>
-
-            <p>
-                The research evaluates whether low-income and minority
-                populations are disproportionately distributed in natural
-                hazard zones and whether those communities may face increased
-                risk of hazard gentrification and displacement.
-            </p>
-
-            <p>
-                The project also investigates whether changes in ACS census
-                data between the 2023 and 2024 5-year estimates display
-                patterns associated with gentrification in historically
-                redlined areas.
-            </p>
-
-        </div>
-
-        <div class="modal-gallery">
-
-            <img
-                src="images/Seattle_red_new.jpg"
-                class="gallery-image"
-            />
-
-            <img
-                src="images/Seattle_New.jpg"
-                class="gallery-image"
-            />
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- LIDAR MODAL -->
-<div id="modal-lidar" class="modal">
-
-    <div class="modal-content">
-
-        <span class="close"
-              onclick="closeModal('modal-lidar')">
-              &times;
-        </span>
-
-        <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
-
-        <img
-            src="images/Lidar_Project_Map_1.jpg"
-            alt="LiDAR Project"
-            class="modal-main-image"
-        />
-
-        <div class="project-description">
-
-            <p>
-                This project visualizes landslide susceptibility across Mercer
-                Island using LiDAR-derived DEMs, slope analysis, hillshade
-                modeling, and terrain classification techniques.
-            </p>
-
-            <p>
-                Multiple terrain models revealed elevated landslide risk near
-                the I-90 highway corridor and the outer slopes of Mercer
-                Island.
-            </p>
-
-            <p>
-                The DEM model reclassified elevation values above 500 as
-                potentially susceptible landslide areas based on prior
-                LiDAR hazard assessment research.
-            </p>
-
-            <p>
-                Hillshade and slope models revealed depressions, cracks,
-                terrain irregularities, and steep slope gradients associated
-                with potential landslide activity.
-            </p>
-
-            <p>
-                Together, the models demonstrate how LiDAR terrain
-                visualization can support hazard mitigation planning and
-                geospatial risk assessment.
-            </p>
-
-            <div class="project-links">
-
-                <a href="https://apps.nationalmap.gov/lidar-explorer/#/"
-                   target="_blank">
-                   USGS LiDAR Explorer
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="modal-gallery">
-
-            <img src="images/Cert1.png" class="gallery-image" />
-            <img src="images/Cert2.png" class="gallery-image" />
-            <img src="images/Cert3.png" class="gallery-image" />
-
-        </div>
-
-    </div>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <button class="tab-btn"
+            onclick="openTab('contact', this)">
+            Contact
+    </button>
 </html>
-    
