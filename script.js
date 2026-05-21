@@ -1,4 +1,4 @@
-function openTab(tabId) {
+function openTab(tabId, buttonElement) {
 
     const tabs = document.querySelectorAll('.tab-content');
     const buttons = document.querySelectorAll('.tab-btn');
@@ -13,8 +13,10 @@ function openTab(tabId) {
 
     document.getElementById(tabId).classList.add('active');
 
-    event.currentTarget.classList.add('active');
+    buttonElement.classList.add('active');
 }
+
+/* ---------- MODALS ---------- */
 
 function openModal(modalId) {
     document.getElementById(modalId).style.display = 'block';
@@ -24,6 +26,8 @@ function closeModal(modalId) {
     document.getElementById(modalId).style.display = 'none';
 }
 
+/* ---------- CLOSE MODAL WHEN CLICKING OUTSIDE ---------- */
+
 window.onclick = function(event) {
 
     const modals = document.querySelectorAll('.modal');
@@ -32,3 +36,8 @@ window.onclick = function(event) {
 
         if (event.target === modal) {
             modal.style.display = 'none';
+        }
+
+    });
+
+}
