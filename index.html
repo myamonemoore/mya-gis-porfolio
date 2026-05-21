@@ -57,64 +57,66 @@
                 </div>
             </div>
         </section>
+        
+        <!-- PROJECTS -->
+<section id="projects" class="tab-content">
 
-        <!-- PROJECTS SECTION -->
-        <section id="projects"
-            class="tab-content">
-      <div class="card">
-  <h2>Hazard Gentrification & Environmental Justice</h2>
+    <!-- SEATTLE PROJECT -->
+    <div class="project-card">
 
-  <img src="images/Seattle_red_new.jpg"
-       alt="Seattle Redlining Preview"
-       class="project-image medium-preview" />
+        <h2>Hazard Gentrification & Environmental Justice</h2>
 
-  <p>
-    This project evaluates how historical redlining spatially aligns with
-    demographic distribution, hazard exposure, and socioeconomic change
-    across Seattle, Washington.
-  </p>
+        <img
+            src="images/Seattle_red_new.jpg"
+            alt="Seattle Redlining Project"
+            class="project-preview-image"
+        />
 
-  <button class="popup-btn"
-          onclick="openModal('gentrificationModal')">
-    View Full Project
-  </button>
-</div>
+        <p>
+            This project evaluates how historical redlining spatially aligns
+            with race, income, education, and natural hazard exposure across
+            Seattle, Washington.
+        </p>
 
-          <!-- LiDAR PROJECT -->
-<div class="project-card">
+        <button
+            class="project-button"
+            onclick="openModal('gentrificationModal')"
+        >
+            View Full Project
+        </button>
 
-    <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
+    </div>
 
-    <img
-        src="images/Lidar_Project_Map_1.jpg"
-        alt="LiDAR Landslide Analysis"
-        class="medium-preview lidar-main-preview"
-    />
+    <!-- LIDAR PROJECT -->
+    <div class="project-card">
 
-    <p>
-        This project applies LiDAR-derived DEM analysis, slope modeling,
-        hillshade visualization, and terrain classification techniques to
-        identify potential landslide susceptibility zones across Mercer Island,
-        Washington.
-    </p>
+        <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
 
-    <p>
-        Multiple terrain models revealed elevated landslide risk along the
-        I-90 transportation corridor and the outer coastal slopes of Mercer
-        Island, demonstrating how high-resolution elevation data can support
-        hazard mitigation and environmental planning workflows.
-    </p>
+        <img
+            src="images/Lidar_Project_Map_1.jpg"
+            alt="LiDAR Landslide Analysis"
+            class="project-preview-image"
+        />
 
-    <button
-        class="popup-trigger"
-        onclick="openModal('modal-lidar')"
-    >
-        View Full Project
-    </button>
+        <p>
+            LiDAR-derived DEM analysis, hillshade modeling, and terrain
+            classification techniques were used to identify potential
+            landslide susceptibility zones across Mercer Island,
+            Washington.
+        </p>
 
-</div>
-             </section>
+        <button
+            class="project-button"
+            onclick="openModal('modal-lidar')"
+        >
+            View Full Project
+        </button>
 
+    </div>
+
+</section>
+
+       
         <!-- RESUME SECTION -->
         <section id="resume" class="tab-content">
             <div class="card resume-paper">
@@ -199,184 +201,68 @@
     </section>
 </main>
     <!-- MODALS -->
-   <div id="gentrificationModal" class="modal">
-  <div class="modal-content large-modal">
+  <!-- SEATTLE MODAL -->
+        <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
 
-    <span class="close"
-          onclick="closeModal('gentrificationModal')">
-      &times;
-    </span>
+        <img
+            src="images/Lidar_Project_Map_1.jpg"
+            alt="LiDAR Project"
+            class="modal-main-image"
+        />
 
-    <h2>Hazard Gentrification & Environmental Justice</h2>
+        <div class="project-description">
 
-    <p>
-      This project explores how historical redlining spatially aligns with
-      race, income, education, and natural hazard exposure in Seattle,
-      Washington.
-    </p>
+            <p>
+                This project visualizes landslide susceptibility across Mercer
+                Island using LiDAR-derived DEMs, slope analysis, hillshade
+                modeling, and terrain classification techniques.
+            </p>
 
-    <p>
-      The research evaluates whether low-income and minority populations
-      are disproportionately distributed in natural hazard zones and
-      whether those communities may face increased risk of hazard
-      gentrification and displacement.
-    </p>
+            <p>
+                Multiple terrain models revealed elevated landslide risk near
+                the I-90 highway corridor and the outer slopes of Mercer
+                Island.
+            </p>
 
-    <p>
-      The project also investigates whether changes in ACS census data
-      between the 2023 and 2024 5-year estimates display patterns
-      associated with gentrification in historically redlined areas.
-    </p>
+            <p>
+                The DEM model reclassified elevation values above 500 as
+                potentially susceptible landslide areas based on prior
+                LiDAR hazard assessment research.
+            </p>
 
-    <h3>Research Questions</h3>
+            <p>
+                Hillshade and slope models revealed depressions, cracks,
+                terrain irregularities, and steep slope gradients associated
+                with potential landslide activity.
+            </p>
 
-    <ul class="project-list">
-      <li>
-        How does historical redlining spatially align with the demographic
-        distribution of race, income, and education in Seattle?
-      </li>
+            <p>
+                Together, the models demonstrate how LiDAR terrain
+                visualization can support hazard mitigation planning and
+                geospatial risk assessment.
+            </p>
 
-      <li>
-        Are low-income and minority demographics distributed in natural
-        hazard zones, and could this increase vulnerability to hazard
-        gentrification?
-      </li>
-<li>
-    Do ACS demographic changes between 2023 and 2024 suggest
-    gentrification patterns within historically redlined areas?
-</li>
+            <div class="project-links">
 
-    </ul>
+                <a href="https://apps.nationalmap.gov/lidar-explorer/#/"
+                   target="_blank">
+                   USGS LiDAR Explorer
+                </a>
 
-    <h3>Data Sources</h3>
+            </div>
 
-    <ul class="project-list">
-      <li>
-        American Community Survey — DP05 ACS Demographic and Housing Estimates
-      </li>
+        </div>
 
-      <li>
-        Mapping Inequality: Redlining in New Deal America
-      </li>
+        <div class="modal-gallery">
 
-      <li>
-        Seattle Hazard Explorer
-      </li>
-    </ul>
+            <img src="images/Cert1.png" class="gallery-image" />
+            <img src="images/Cert2.png" class="gallery-image" />
+            <img src="images/Cert3.png" class="gallery-image" />
 
-    <div class="project-links">
-      <a href="https://dsl.richmond.edu/panorama/redlining/"
-         target="_blank">
-         Redlining Dataset
-      </a>
-
-      <a href="https://experience.arcgis.com/experience/2acb05d732134331bc05214740076373"
-         target="_blank">
-         Seattle Hazard Explorer
-      </a>
-    </div>
-
-    <div class="modal-gallery">
-
-      <img src="images/Seattle_red_new.jpg"
-           alt="Seattle Redlining Map"
-           class="modal-img medium-modal-img" />
-
-      <img src="images/Seattle_New.jpg"
-           alt="Seattle Demographic Analysis"
-           class="modal-img medium-modal-img" />
-
-    </div>
-  </div>
-</div>
-    
-   <!-- LiDAR MODAL -->
-<div id="modal-lidar" class="modal">
-  <div class="modal-content lidar-modal">
-
-    <span class="close" onclick="closeModal('modal-lidar')">&times;</span>
-
-    <h2>LiDAR-Based Landslide Susceptibility Assessment</h2>
-
-    <!-- MAIN FEATURE IMAGE -->
-    <img
-      src="images/Lidar_Project_Map_1.jpg"
-      alt="LiDAR Landslide Project"
-      class="lidar-hero-image"
-    />
-
-    <!-- PROJECT DESCRIPTION -->
-    <div class="lidar-description">
-
-      <p>
-        This project visualizes landslide susceptibility across Mercer Island,
-        Washington using LiDAR-derived terrain models, DEM analysis, hillshade
-        modeling, and slope classification techniques.
-      </p>
-
-      <p>
-        The final map compares multiple terrain representations to identify
-        potential landslide risk zones concentrated near the I-90 highway
-        corridor and along the outer slopes of Mercer Island.
-      </p>
-
-      <p>
-        The DEM classification model reclassified elevation values above 500
-        as potentially susceptible areas based on previous LiDAR landslide
-        studies.
-      </p>
-
-      <p>
-        Hillshade and slope models revealed depressions, cracks, terrain
-        irregularities, and steep slope gradients associated with potential
-        landslide activity.
-      </p>
-
-      <p>
-        Together, the models demonstrate how LiDAR terrain visualization can
-        support hazard mitigation planning and geospatial risk assessment.
-      </p>
-
-      <div class="lidar-source">
-        <strong>Data Source:</strong><br>
-        USGS 3DEP — WA_KingCounty_2021_B21
-      </div>
-
-      <div class="project-links">
-        <a
-          href="https://apps.nationalmap.gov/lidar-explorer/#/"
-          target="_blank"
-        >
-          USGS LiDAR Explorer
-        </a>
-      </div>
+        </div>
 
     </div>
 
-    <!-- SUPPORTING IMAGES -->
-    <div class="lidar-gallery">
-
-      <img
-        src="images/Cert1.png"
-        alt="LiDAR Certification 1"
-        class="lidar-small-image"
-      />
-
-      <img
-        src="images/Cert2.png"
-        alt="LiDAR Certification 2"
-        class="lidar-small-image"
-      />
-
-      <img
-        src="images/Cert3.png"
-        alt="LiDAR Certification 3"
-        class="lidar-small-image"
-      />
-
-    </div>
-
-  </div>
 </div>
     <script src="script.js"></script>
 </body>
