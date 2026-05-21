@@ -297,6 +297,20 @@ window.onclick = function(event) {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
+        .modal-gallery {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.gallery-image {
+    width: 45%;
+    min-width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
 
     });
 
