@@ -220,51 +220,80 @@ Replace your existing files completely with the following versions.
 </main>
 
 <!-- SEATTLE MODAL -->
-<div id="seattleModal" class="modal">
+<div id="gentrificationModal" class="modal">
 
     <div class="modal-content">
 
         <span class="close"
-              onclick="closeModal('seattleModal')">
+              onclick="closeModal('gentrificationModal')">
               &times;
         </span>
 
         <h2>Hazard Gentrification & Environmental Justice</h2>
 
-        <img src="images/Seattle_red_new.jpg"
-             class="modal-main-image">
+        <div class="modal-gallery">
 
-        <div class="modal-description">
+            <img
+                src="images/Seattle_red_new.jpg"
+                alt="Seattle Redlining Analysis"
+                class="gallery-image"
+            />
+
+            <img
+                src="images/Seattle_New.jpg"
+                alt="Seattle Demographic Analysis"
+                class="gallery-image"
+            />
+
+        </div>
+
+        <div class="project-description">
 
             <p>
                 This project evaluates how historical redlining spatially aligns
-                with race, income, education, and natural hazard exposure across
-                Seattle, Washington.
+                with race, income, education, and natural hazard exposure
+                across Seattle, Washington.
             </p>
 
             <p>
                 The research investigates whether low-income and minority
-                populations are disproportionately distributed in natural hazard
-                zones and whether those communities may face increased risk of
-                hazard gentrification and climate-driven displacement.
+                populations are disproportionately distributed in natural
+                hazard zones and whether those communities may face increased
+                risk of hazard gentrification and climate-driven displacement.
+            </p>
+
+            <p>
+                ACS demographic estimates, historical HOLC redlining data,
+                and Seattle hazard exposure datasets were integrated within
+                a GIS workflow to analyze spatial patterns of vulnerability,
+                inequality, and neighborhood change.
+            </p>
+
+            <p>
+                The project also examines demographic shifts between ACS
+                5-year estimates to identify potential indicators of
+                gentrification within historically redlined communities.
             </p>
 
         </div>
 
-        <div class="modal-gallery">
+        <div class="project-links">
 
-            <img src="images/Seattle_red_new.jpg"
-                 class="gallery-image">
+            <a href="https://dsl.richmond.edu/panorama/redlining/"
+               target="_blank">
+               Redlining Dataset
+            </a>
 
-            <img src="images/Seattle_New.jpg"
-                 class="gallery-image">
+            <a href="https://experience.arcgis.com/experience/2acb05d732134331bc05214740076373"
+               target="_blank">
+               Seattle Hazard Explorer
+            </a>
 
         </div>
 
     </div>
 
 </div>
-
 <!-- LIDAR MODAL -->
 <div id="lidarModal" class="modal">
 
